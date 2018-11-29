@@ -108,6 +108,7 @@ class Gene:
       # On error, draw a new molecule from the initial population
       if score == None:
         population[i] = random.choice(self.initial_population)
+        score = 0.0
 
       fitness.append(max(float(score), 0.0))
     
